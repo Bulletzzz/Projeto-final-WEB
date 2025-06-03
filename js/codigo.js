@@ -167,12 +167,14 @@ while(qntprods > 0) {
 
     entidades.appendChild(caixaproduto)
     qntprods -= 1;
-    numerodemaquinas.innerText = `${produtos.length}`
+    let maquinasVal = produtos.filter(produto => produto.excluido === false);
+    numerodemaquinas.innerText = `${maquinasVal.length}`
     }
 }
 }
 
-if(produtos.length > 0){
+let maquinasVal = produtos.filter(produto => produto.excluido === false);
+if(maquinasVal.length > 0){
     AtualizarProds();
 }
 else {
