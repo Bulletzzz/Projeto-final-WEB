@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cadastre-se - Bernasoft</title>
+    <title>Cadastro - Bernasoft</title>
+    <link rel="stylesheet" href="assets/estilo.css">
 </head>
-<body>
-    
+<body class="paginaAutenticacao">
+    <div class="containerAutenticacao">
+        <div class="cardAutenticacao">
+            <div class="cabecalhoAutenticacao">
+                <div class="logoAutenticacao">Bernasoft</div>
+                <h1 class="tituloAutenticacao">Crie sua conta</h1>
+            </div>
+            
+            <form id="formCadastro" class="formularioAutenticacao">
+                <div class="grupoInput">
+                    <label for="nome" class="rotuloInput">Nome completo</label>
+                    <input type="text" id="nome" class="campoInput" placeholder="Seu nome completo" required>
+                </div>
+                
+                <div class="grupoInput">
+                    <label for="emailCadastro" class="rotuloInput">E-mail</label>
+                    <input type="email" id="emailCadastro" class="campoInput" placeholder="seu@email.com" required>
+                </div>
+                
+                <div class="grupoInput">
+                    <label for="senhaCadastro" class="rotuloInput">Senha</label>
+                    <input type="password" id="senhaCadastro" class="campoInput" placeholder="Mínimo 6 caracteres" required>
+                </div>
+                
+                <div class="grupoInput">
+                    <label for="cpf" class="rotuloInput">CPF</label>
+                    <input type="text" id="cpf" class="campoInput" placeholder="000.000.000-00" required>
+                </div>
+                
+                <button type="submit" class="botaoAutenticacao">Cadastrar</button>
+                
+                <div id="mensagemCadastro" class="mensagemAutenticacao"></div>
+                
+                <p class="opcaoAlternativa">
+                    Já tem uma conta? <a href="login.html" class="linkAlternativo">Faça login</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
 </body>
 </html>

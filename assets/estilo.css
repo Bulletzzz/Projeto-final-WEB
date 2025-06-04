@@ -904,3 +904,156 @@ canvas {
   .font-buttons button:hover {
     background-color: #2980b9;
   }
+
+
+  /* Página de cadastro e login */
+.paginaAutenticacao {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f9ff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerAutenticacao {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+}
+
+.cardAutenticacao {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.cabecalhoAutenticacao {
+    margin-bottom: 2rem;
+}
+
+.logoAutenticacao {
+    color: royalblue;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.tituloAutenticacao {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.formularioAutenticacao {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.grupoInput {
+    text-align: left;
+}
+
+.rotuloInput {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.campoInput {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.campoInput:focus {
+    border-color: royalblue;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(65, 105, 225, 0.2);
+}
+
+.opcaoLembrarme {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.checkboxLembrarme {
+    width: 1rem;
+    height: 1rem;
+    accent-color: royalblue;
+}
+
+.botaoAutenticacao {
+    background-color: royalblue;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 0.5rem;
+}
+
+.botaoAutenticacao:hover {
+    background-color: #4169e1;
+}
+
+.opcaoAlternativa {
+    margin-top: 1.5rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.linkAlternativo {
+    color: royalblue;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.linkAlternativo:hover {
+    text-decoration: underline;
+}
+
+.mensagemAutenticacao {
+    padding: 0.8rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    display: none;
+}
+
+.mensagemAutenticacao.sucesso {
+    background-color: #e6f7ee;
+    color: #2e7d32;
+    display: block;
+}
+
+.mensagemAutenticacao.erro {
+    background-color: #ffebee;
+    color: #c62828;
+    display: block;
+}
+
+@media (max-width: 480px) {
+    .containerAutenticacao {
+        padding: 1rem;
+    }
+    
+    .cardAutenticacao {
+        padding: 1.5rem;
+    }
+}

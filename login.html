@@ -4,8 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Bernasoft</title>
+    <link rel="stylesheet" href="assets/estilo.css">
 </head>
-<body>
-    
+<body class="paginaAutenticacao">
+    <div class="containerAutenticacao">
+        <div class="cardAutenticacao">
+            <div class="cabecalhoAutenticacao">
+                <div class="logoAutenticacao">Bernasoft</div>
+                <h1 class="tituloAutenticacao">Acesse sua conta</h1>
+            </div>
+            
+            <form id="loginForm" class="formularioAutenticacao">
+                <div class="grupoInput">
+                    <label for="email" class="rotuloInput">E-mail</label>
+                    <input type="email" id="email" class="campoInput" placeholder="seu@email.com" required>
+                </div>
+                
+                <div class="grupoInput">
+                    <label for="senha" class="rotuloInput">Senha</label>
+                    <input type="password" id="senha" class="campoInput" placeholder="Sua senha" required>
+                </div>
+                
+                <div class="opcaoLembrarme">
+                    <input type="checkbox" id="lembrar" class="checkboxLembrarme">
+                    <label for="lembrar">Lembrar-me</label>
+                </div>
+                
+                <button type="submit" class="botaoAutenticacao">Entrar</button>
+                
+                <div id="mensagemLogin" class="mensagemAutenticacao"></div>
+                
+                <p class="opcaoAlternativa">
+                    Ainda não tem uma conta? <a href="cadastro.html" class="linkAlternativo">Cadastre-se</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
 </body>
 </html>
